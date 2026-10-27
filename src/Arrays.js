@@ -4,9 +4,7 @@
   разделенными запятыми.
 */
 export function arraySorting(data) {
-    // Разбиваем строку на массив строк, преобразуем в числа,
-    // сортируем по возрастанию (a - b, чтобы избежать лексикографической сортировки)
-    // и снова собираем в строку через запятую
+   
     return data
         .split(',')
         .map(Number)
@@ -20,7 +18,7 @@ export function arraySorting(data) {
   были бы удалены из массива, и верните его в качестве результата функции.
 */
 export function arrayFiltering(data) {
-    // Оставляем только те элементы, которые не больше 100
+    
     return data.filter((item) => item <= 100);
 }
 
@@ -30,7 +28,7 @@ export function arrayFiltering(data) {
   значения из первых двух массивов, и верните его в качестве результата функции.
 */
 export function arrayPushing(array1, array2) {
-    // Создаём новый массив, куда поочерёдно добавляем элементы из первого и второго массива
+   
     const result = [];
     for (let i = 0; i < array1.length; i++) {
         result.push(array1[i]);
